@@ -1,8 +1,8 @@
 # Site settings
 title: Coder Wealth
 description: "Build wealth through code and investing. Tech tutorials, passive income strategies, and smart financial decisions for developers."
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://coderwealth.com" # the base hostname & protocol for your site
+baseurl: "" # subpath of your site, e.g. /blog
+url: "https://coderwealth.com" # base hostname & protocol for your site
 lang: en_US
 
 # Build settings
@@ -26,11 +26,12 @@ exclude:
   - README.md
   - LICENSE
   - CNAME
+  - .gitignore
 
 # Defaults
 defaults:
   - scope:
-      path: "" # an empty string means all files in the project
+      path: "_posts"  # CORREÇÃO: Limitado a pasta _posts (evita README.md, etc.)
       type: "posts"
     values:
       layout: "post"

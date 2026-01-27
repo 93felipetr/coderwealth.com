@@ -1,82 +1,82 @@
 ---
-# O Jekyll exige este bloco para processar o Liquid
+layout: default
+title: Home
 ---
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Build wealth through code and investing for developers. Tech tutorials, passive income strategies, and smart financial decisions.">
-  <title>Coder Wealth - Build Wealth Through Code and Investing</title>
-  <link rel="stylesheet" href="/css/style.css">
-</head>
-<body>
-  <header class="header">
-    <div class="container">
-      <nav class="nav">
-        <a href="/" class="nav-link nav-link-active">Home</a>
-        <a href="/tech/" class="nav-link">Tech</a>
-        <a href="/invest/" class="nav-link">Investing</a>
-        <a href="/learn/" class="nav-link">Education</a>
-        <a href="/tools/" class="nav-link">Tools</a>
-        <a href="/about/" class="nav-link">About</a>
-      </nav>
-    </div>
-  </header>
 
-  <main class="main">
-    <div class="container">
-      <section class="hero">
-        <h1>Build Wealth Through Code & Investing</h1>
-        <p class="hero-description">
-          Tech tutorials, passive income strategies, and smart financial decisions for developers.
-        </p>
-      </section>
+<div class="container">
+  <h1>Latest Articles from Coder Wealth</h1>
+  <p>Build wealth through code and investing.</p>
 
-      <section class="posts">
-        <h2>Latest Articles</h2>
-        <ul class="post-list">
-          {% for post in paginator.posts %}
-            <li class="post-item">
-              <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-              <h3>
-                <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
-              </h3>
-              <div class="post-excerpt">
-                {{ post.excerpt }}
-              </div>
-            </li>
-          {% endfor %}
-        </ul>
-      </section>
+  <div class="articles-grid">
+    <h2>New Articles (Published Today)</h2>
+    <ul class="article-list">
+      <li>
+        <h3><a href="/2026/01/27/fire-strategy-tech-workers-2026/">FIRE Strategy for Tech Workers</a></h3>
+        <p class="meta">Published: Jan 27, 2026 | Category: Investing</p>
+      </li>
+      <li>
+        <h3><a href="/2026/01/27/realestate-investing-tech-workers-2026/">Real Estate Investing for Tech Workers</a></h3>
+        <p class="meta">Published: Jan 27, 2026 | Category: Investing</p>
+      </li>
+      <li>
+        <h3><a href="/2026/01/27/crypto-defi-strategies-2026/">Crypto & DeFi Strategies for 2026</a></h3>
+        <p class="meta">Published: Jan 27, 2026 | Category: Investing</p>
+      </li>
+      <li>
+        <h3><a href="/2026/01/27/terraform-iac-complete-guide-2026/">Terraform IaC Complete Guide</a></h3>
+        <p class="meta">Published: Jan 27, 2026 | Category: Tech</p>
+      </li>
+    </ul>
 
-      {% if paginator.total_pages > 1 %}
-      <div class="pagination">
-        {% if paginator.previous_page %}
-          <a href="{{ paginator.previous_page_path | relative_url }}">&laquo; Previous</a>
-        {% else %}
-          <span class="disabled">&laquo; Previous</span>
-        {% endif %}
+    <div class="divider"></div>
 
-        <span class="current">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
+    <h2>Popular Articles</h2>
+    <ul class="article-list">
+      <li>
+        <h3><a href="/2026/01/27/kubernetes-best-practices-2026/">Kubernetes Best Practices for 2026</a></h3>
+        <p class="meta">Category: Tech (DevOps)</p>
+      </li>
+      <li>
+        <h3><a href="/2026/01/27/devops-automation-tools-seniors-2026/">DevOps Automation Tools for 2026</a></h3>
+        <p class="meta">Category: Tech (Automation)</p>
+      </li>
+      <li>
+        <h3><a href="/2026/01/27/aws-cloud-certification-free-study-guide-2026/">AWS Cloud Certification Free Study Guide</a></h3>
+        <p class="meta">Category: Education (Cloud)</p>
+      </li>
+      <li>
+        <h3><a href="/2025/01/27/best-crm-small-business-2026/">Best CRM for Small Business</a></h3>
+        <p class="meta">Category: Tools (Business)</p>
+      </li>
+    </ul>
+  </div>
 
-        {% if paginator.next_page %}
-          <a href="{{ paginator.next_page_path | relative_url }}">Next &raquo;</a>
-        {% else %}
-          <span class="disabled">Next &raquo;</span>
-        {% endif %}
-      </div>
-      {% endif %}
+  <div class="sidebar">
+    <h3>Categories</h3>
+    <ul>
+      <li><a href="/tech/">Technology</a></li>
+      <li><a href="/invest/">Investing</a></li>
+      <li><a href="/learn/">Education</a></li>
+      <li><a href="/tools/">Tools</a></li>
+    </ul>
+  </div>
+</div>
 
-    </div>
-  </main>
-
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-content">
-        <p>&copy; 2026 Coder Wealth. All rights reserved.</p>
-      </div>
-    </div>
-  </footer>
-</body>
-</html>
+<style>
+  .container { max-width: 1200px; margin: 0 auto; padding: 20px; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  h1 { color: #333; border-bottom: 2px solid #007bff; padding-bottom: 10px; }
+  .articles-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 40px; margin-top: 30px; }
+  .article-list { list-style: none; padding: 0; }
+  .article-list li { margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid #eee; }
+  .article-list h3 { margin: 0 0 10px 0; font-size: 1.3rem; }
+  .article-list h3 a { text-decoration: none; color: #007bff; }
+  .article-list h3 a:hover { color: #0056b3; text-decoration: underline; }
+  .meta { color: #666; font-size: 0.9rem; margin-top: 5px; }
+  .divider { height: 1px; background: #ddd; margin: 30px 0; }
+  .sidebar { background: #f8f9fa; padding: 20px; border-radius: 8px; }
+  .sidebar h3 { margin-top: 0; border-bottom: 1px solid #dee2e6; padding-bottom: 10px; }
+  .sidebar ul { list-style: none; padding: 0; }
+  .sidebar li { margin-bottom: 10px; }
+  .sidebar a { text-decoration: none; color: #333; font-weight: 500; display: block; padding: 5px 10px; border-radius: 4px; background: #fff; transition: background 0.2s; }
+  .sidebar a:hover { background: #e9ecef; }
+</style>
