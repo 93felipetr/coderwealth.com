@@ -1,0 +1,64 @@
+---
+layout: default
+title: Coder Wealth - Build Wealth Through Code and Investing
+---
+
+<div class="hero">
+  <h1>Build Wealth Through Code and Investing</h1>
+  <p class="tagline">Tech tutorials, passive income strategies, and smart financial decisions for developers</p>
+  
+  <div class="cta-buttons">
+    <a href="/tech/" class="btn btn-primary">Explore Tech</a>
+    <a href="/invest/" class="btn btn-secondary">Start Investing</a>
+  </div>
+</div>
+
+<div class="latest-posts">
+  <h2>Latest Articles</h2>
+  <ul class="post-list">
+    {% for post in site.posts limit:3 %}
+      <li>
+        <span class="post-date">{{ post.date | date: "%b %d, %Y" }}</span>
+        <a href="{{ post.url }}" class="post-link">{{ post.title }}</a>
+        <span class="post-category">{{ post.category }}</span>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+
+<div class="niches-grid">
+  <h2>Explore by Topic</h2>
+  
+  <div class="niche-card">
+    <h3>Technology</h3>
+    <p>Cloud computing, DevOps, security, and development best practices</p>
+    <a href="/tech/" class="btn btn-small">Explore Tech</a>
+  </div>
+  
+  <div class="niche-card">
+    <h3>Finance</h3>
+    <p>Investing strategies, passive income, and wealth building for developers</p>
+    <a href="/invest/" class="btn btn-small">Start Investing</a>
+  </div>
+  
+  <div class="niche-card">
+    <h3>Education</h3>
+    <p>Certifications, interview preparation, and learning paths</p>
+    <a href="/learn/" class="btn btn-small">Start Learning</a>
+  </div>
+  
+  <div class="niche-card">
+    <h3>Tools</h3>
+    <p>Reviews of SaaS, developer tools, and productivity software</p>
+    <a href="/tools/" class="btn btn-small">View Tools</a>
+  </div>
+</div>
+
+<div class="newsletter">
+  <h2>Stay Updated</h2>
+  <p>Get weekly tips on coding, investing, and building wealth as a developer.</p>
+  <form class="newsletter-form">
+    <input type="email" placeholder="Enter your email" />
+    <button type="submit" class="btn btn-primary">Subscribe</button>
+  </form>
+</div>

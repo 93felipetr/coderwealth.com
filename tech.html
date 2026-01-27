@@ -1,0 +1,62 @@
+---
+layout: default
+title: Technology - Cloud, DevOps, Security & Development
+description: "Tech tutorials and guides: Cloud computing, DevOps, cyber security, database, and SaaS development for developers."
+---
+
+<div class="niche-header">
+  <h1>Technology</h1>
+  <p class="tagline">Cloud, DevOps, Security & Development Tutorials</p>
+</div>
+
+<div class="featured-topics">
+  <h2>Featured Topics</h2>
+  <div class="topics-grid">
+    <div class="topic-card">
+      <h3>Cloud Computing</h3>
+      <p>AWS, Azure, GCP, serverless architecture</p>
+      <a href="/tech/cloud/" class="btn btn-small">Explore Cloud</a>
+    </div>
+    <div class="topic-card">
+      <h3>DevOps & CI/CD</h3>
+      <p>Kubernetes, Docker, Infrastructure as Code</p>
+      <a href="/tech/devops/" class="btn btn-small">Explore DevOps</a>
+    </div>
+    <div class="topic-card">
+      <h3>Cybersecurity</h3>
+      <p>API security, authentication, OWASP compliance</p>
+      <a href="/tech/security/" class="btn btn-small">Explore Security</a>
+    </div>
+    <div class="topic-card">
+      <h3>Database</h3>
+      <p>SQL optimization, NoSQL, ETL pipelines</p>
+      <a href="/tech/database/" class="btn btn-small">Explore Database</a>
+    </div>
+    <div class="topic-card">
+      <h3>SaaS Development</h3>
+      <p>Microservices, API monetization, pricing models</p>
+      <a href="/tech/saas/" class="btn btn-small">Explore SaaS</a>
+    </div>
+  </div>
+</div>
+
+<div class="latest-posts">
+  <h2>Latest Tech Articles</h2>
+  <ul class="post-list">
+    {% for post in site.posts limit:10 %}
+      {% if post.categories contains 'tech' %}
+        <li>
+          <span class="post-date">{{ post.date | date: "%b %d, %Y" }}</span>
+          <a href="{{ post.url }}" class="post-link">{{ post.title }}</a>
+          <p class="post-excerpt">{{ post.excerpt | truncate: 120 }}</p>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</div>
+
+<div class="callout">
+  <h3>Want to Build Wealth Through Code?</h3>
+  <p>Explore our investing strategies for developers.</p>
+  <a href="/invest/" class="btn btn-secondary">Start Investing</a>
+</div>

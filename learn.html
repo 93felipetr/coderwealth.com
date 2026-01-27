@@ -1,0 +1,62 @@
+---
+layout: default
+title: Education & Certifications - Cloud, DevOps, Programming
+description: "Tech education guides: cloud certifications, DevOps certifications, programming certifications, interview preparation, and learning paths for developers."
+---
+
+<div class="niche-header">
+  <h1>Education & Certifications</h1>
+  <p class="tagline">Cloud, DevOps, and Programming Certifications for Developers</p>
+</div>
+
+<div class="featured-topics">
+  <h2>Featured Topics</h2>
+  <div class="topics-grid">
+    <div class="topic-card">
+      <h3>Cloud Certifications</h3>
+      <p>AWS Solutions Architect, Azure Administrator, Google Cloud Professional certification guides and exam prep</p>
+      <a href="/learn/cloud/" class="btn btn-small">Cloud Certs</a>
+    </div>
+    <div class="topic-card">
+      <h3>DevOps Certifications</h3>
+      <p>Kubernetes, Docker, CI/CD tools, and Infrastructure as Code certifications</p>
+      <a href="/learn/devops/" class="btn btn-small">DevOps Certs</a>
+    </div>
+    <div class="topic-card">
+      <h3>Programming Certifications</h3>
+      <p>Python, JavaScript, Java, C#, and other programming language certifications</p>
+      <a href="/learn/programming/" class="btn btn-small">Programming Certs</a>
+    </div>
+    <div class="topic-card">
+      <h3>Technical Interview Prep</h3>
+      <p>Data structures, algorithms, system design, and coding interview questions and answers</p>
+      <a href="/learn/interview/" class="btn btn-small">Interview Prep</a>
+    </div>
+    <div class="topic-card">
+      <h3>Learning Paths</h3>
+      <p>Fullstack developer roadmap, backend engineer roadmap, and frontend developer learning paths</p>
+      <a href="/learn/paths/" class="btn btn-small">Learning Paths</a>
+    </div>
+  </div>
+</div>
+
+<div class="latest-posts">
+  <h2>Latest Education Articles</h2>
+  <ul class="post-list">
+    {% for post in site.posts limit:10 %}
+      {% if post.categories contains 'learn' or post.categories contains 'education' %}
+        <li>
+          <span class="post-date">{{ post.date | date: "%b %d, %Y" }}</span>
+          <a href="{{ post.url }}" class="post-link">{{ post.title }}</a>
+          <p class="post-excerpt">{{ post.excerpt | truncate: 120 }}</p>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</div>
+
+<div class="callout">
+  <h3>Ready to Get Certified?</h3>
+  <p>Start with our free AWS Solutions Architect certification study guide.</p>
+  <a href="/learn/aws-architect/" class="btn btn-primary">Start Learning</a>
+</div>

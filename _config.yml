@@ -1,0 +1,66 @@
+# Site settings
+title: Coder Wealth
+description: "Build wealth through code and investing. Tech tutorials, passive income strategies, and smart financial decisions for developers."
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://coderwealth.com" # the base hostname & protocol for your site
+lang: en_US
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+timezone: UTC-3
+
+# Plugins
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-feed
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - README.md
+  - LICENSE
+  - CNAME
+
+# Defaults
+defaults:
+  - scope:
+      path: "" # an empty string means all files in the project
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Clever Weekly"
+      comments: true
+
+# Pagination
+paginate: 10
+paginate_path: "/page:num/"
+
+# SEO
+tagline: "Build wealth through code and investing for developers"
+twitter:
+  username: coderwealth
+  card: summary
+social:
+  name: Coder Wealth
+  links:
+    - https://twitter.com/coderwealth
+    - https://github.com/coderwealth
+
+# Navigation
+nav:
+  - title: Tech
+    url: /tech/
+  - title: Investing
+    url: /invest/
+  - title: Education
+    url: /learn/
+  - title: Tools
+    url: /tools/
+  - title: About
+    url: /about/

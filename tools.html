@@ -1,0 +1,57 @@
+---
+layout: default
+title: Developer Tools & Software Reviews - SaaS, CRM, DevOps
+description: "Developer tools reviews and comparisons: SaaS, CRM software, project management tools, developer tools, CI/CD platforms, database monitoring tools."
+---
+
+<div class="niche-header">
+  <h1>Developer Tools & Software Reviews</h1>
+  <p class="tagline">SaaS, CRM, project management, CI/CD, and developer tools reviews</p>
+</div>
+
+<div class="featured-topics">
+  <h2>Featured Topics</h2>
+  <div class="topics-grid">
+    <div class="topic-card">
+      <h3>CRM Software</h3>
+      <p>Best CRM for small business 2026, Salesforce vs HubSpot vs Pipedrive</p>
+      <a href="/tools/crm/" class="btn btn-small">Explore CRM</a>
+    </div>
+    <div class="topic-card">
+      <h3>Project Management</h3>
+      <p>Jira vs Asana vs Monday.com, best Kanban tools for developers</p>
+      <a href="/tools/project/" class="btn btn-small">Explore Project</a>
+    </div>
+    <div class="topic-card">
+      <h3>Developer Tools</h3>
+      <p>Best API testing tools, best CI/CD platforms, best code review tools</p>
+      <a href="/tools/dev-tools/" class="btn btn-small">Explore Tools</a>
+    </div>
+    <div class="topic-card">
+      <h3>CI/CD Platforms</h3>
+      <p>Best CI/CD platforms comparison, GitHub Actions vs GitLab vs Jenkins</p>
+      <a href="/tools/cicd/" class="btn btn-small">Explore CI/CD</a>
+    </div>
+  </div>
+</div>
+
+<div class="latest-posts">
+  <h2>Latest Tool Reviews</h2>
+  <ul class="post-list">
+    {% for post in site.posts limit:10 %}
+      {% if post.categories contains 'reviews' or post.categories contains 'tools' %}
+        <li>
+          <span class="post-date">{{ post.date | date: "%b %d, %Y" }}</span>
+          <a href="{{ post.url }}" class="post-link">{{ post.title }}</a>
+          <p class="post-excerpt">{{ post.excerpt | truncate: 120 }}</p>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</div>
+
+<div class="callout">
+  <h3>Looking for CRM for Small Business?</h3>
+  <p>Read our comprehensive comparison of the best CRM software 2026.</p>
+  <a href="/tools/best-crm-small-business-2026/" class="btn btn-primary">Read Review</a>
+</div>
