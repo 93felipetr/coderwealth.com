@@ -87,7 +87,7 @@ The 4% rule is a safe withdrawal rate for retirement portfolios.
 
 ### Why 4%?
 
-Based on historical market returns (S&P 500), a 4% withdrawal rate has a high probability (95%+) of portfolio survival over 30-year periods.
+Based on historical market returns (S&P 500), a 4% withdrawal rate has a very high probability (95%+) of portfolio survival over 30-year periods.
 
 ### Withdrawal Rate Risks
 
@@ -98,7 +98,7 @@ Based on historical market returns (S&P 500), a 4% withdrawal rate has a high pr
 | 5% | 80-90% (Moderate Risk) |
 | 6%+ | <70% (High Risk) |
 
-**Recommendation:** Start with 4% withdrawal rate, adjust based on market conditions.
+**Recommendation:** Start with a 3-4% withdrawal rate, adjust based on market conditions.
 
 ## 4. Calculating Your FIRE Number
 
@@ -338,7 +338,7 @@ Passive income dramatically reduces your time to FIRE.
 
 **Problem:** Not accounting for healthcare costs, taxes, or unexpected expenses.
 
-**Solution:** Track expenses for 3-6 months, calculate FIRE number based on actual spending, not theoretical budgets.
+**Solution:** Track expenses for 3-6 months, calculate FIRE number based on actual spending.
 
 ### Mistake 2: Over-Optimistic Investment Returns
 
@@ -384,6 +384,8 @@ FIRE is achievable for tech workers in 2026 with strategic saving, investing, an
 4. Start generating passive income streams
 5. Invest aggressively (target 7-8% returns)
 6. Review and rebalance portfolio annually
+7. Withdraw conservatively (3-4% SWR) with 2-3% cash cushion
+8. Monitor progress and adjust strategy based on market conditions
 
 **Expected Outcome:**
 - FIRE in 15-20 years (from starting at $150k/year salary)
@@ -401,6 +403,14 @@ FIRE is achievable for tech workers in 2026 with strategic saving, investing, an
 
 - [Top 5 Tax-Optimized ETFs for Tech Workers](/invest/tax-optimized/2026/01/27/top-5-tax-optimized-etfs-tech-workers/)
 - [Passive Income for Developers: 7 Strategies That Actually Work](/finance/2026/01/27/passive-income-ideas-2026/)
-- [Dividend Reinvestment Strategy: Compounding Returns](/invest/dividend/2026/01/27/dividend-reinvesting-strategy-2026/)
+- [Dividend Reinvestment Strategy: Compounding Returns](/invest/dividend/2026/01/27/dividend-reinvestment-strategy-2026/)
 - [Real Estate Investing for Tech Workers](/invest/realestate/2026/01/27/realestate-investing-tech-workers-2026/)
 - [Crypto & DeFi Strategies for 2026](/invest/crypto/2026/01/27/crypto-defi-strategies-2026/)
+- [Building SaaS: Micro-SaaS Profitability Guide](/tech/saas/building-saas-complete-guide-2026/)
+- [Complete Guide: How to Invest in US Stocks from Brazil](/invest/stocks/2026/01/27/investing-us-stocks-brazil/)
+
+---
+
+**Enjoyed this article?** Subscribe to get weekly tips on FIRE strategies, retirement planning, and wealth building for tech professionals and long-term wealth building.
+
+[Subscribe](/subscribe)
