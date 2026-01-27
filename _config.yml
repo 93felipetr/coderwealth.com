@@ -5,13 +5,10 @@ baseurl: "" # subpath of your site, e.g. /blog
 url: "https://coderwealth.com" # base hostname & protocol for your site
 lang: en_US
 
-# Force Rebuild Comment (Para corrigir erro 404 nos artigos)
-# Force rebuild for article 404 errors
-
 # Build settings
 markdown: kramdown
 highlighter: rouge
-permalink: pretty
+permalink: /:year/:month/:day/:title/ # CORREÇÃO: Permalink baseado em data para bater com a estrutura de pastas (_posts/YEAR/MONTH/DAY/) e com os links
 timezone: UTC-3
 
 # Plugins
