@@ -1,14 +1,17 @@
 # Site settings
 title: Coder Wealth
 description: "Build wealth through code and investing. Tech tutorials, passive income strategies, and smart financial decisions for developers."
-baseurl: "" # subpath of your site, e.g. /blog
-url: "https://coderwealth.com" # base hostname & protocol for your site
+baseurl: ""
+url: "https://coderwealth.com"
 lang: en_US
+
+# Force Jekyll Rebuild (Comentário para corrigir erro 404 nos artigos)
+# Ao modificar este arquivo, o GitHub Pages reprocessa o site inteiro.
 
 # Build settings
 markdown: kramdown
 highlighter: rouge
-permalink: /:year/:month/:day/:title/ # CORREÇÃO: Permalink baseado em data para bater com a estrutura de pastas (_posts/YEAR/MONTH/DAY/) e com os links
+permalink: pretty
 timezone: UTC-3
 
 # Plugins
